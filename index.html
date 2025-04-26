@@ -36,7 +36,7 @@
     .logo img {
       width: 100px;
       border-radius: 50%;
-      animation: rotate 4s linear infinite;
+      animation: rotate 6s linear infinite;
     }
 
     @keyframes rotate {
@@ -91,7 +91,7 @@
       font-size: 1rem;
       text-decoration: none;
       display: inline-block;
-      animation: bounce 2s infinite;
+      animation: bounce 3s infinite;
     }
 
     @keyframes bounce {
@@ -108,7 +108,7 @@
     <h1>Result</h1>
     <div class="feature">এই অ্যাপ দিয়ে রেজাল্ট দেখা যাবে, এমনকি রেজাল্ট পরিবর্তনও করা যাবে!</div>
     <div class="download-counter">
-      ডাউনলোড সংখ্যা: <span id="counter">10000</span>+
+      ডাউনলোড সংখ্যা: <span id="counter">1022</span>+
     </div>
     <div class="boards">
       <p>Dhaka Board</p>
@@ -131,7 +131,7 @@
     const counter = document.getElementById('counter');
 
     setInterval(() => {
-      count += Math.floor(Math.random() * 5); // Random +1 to +4 increase
+      count += Math.floor(Math.random() * 5); // Random +1 to +2 increase
       counter.textContent = count.toLocaleString('en-IN');
     }, 2000);
   </script>
